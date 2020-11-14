@@ -66,8 +66,7 @@ int main(int iArgC, char *apszArgV[]) {
                         LogError("Failed to listen");
                         iStatus = 1;
                     } else {
-                        LogInfo("Socket up and running. Listening on port %d", iPort);
-                        printf("Server listening on port %d. Exit with 'ctrl-c", iPort);
+                        LogInfo("Server listening on port %d. Exit with 'ctrl-c", iPort);
                         while (1) {
                             fdConnection = accept(fdServer, (struct sockaddr *) NULL, (socklen_t *) &iAdrLen);
                             if (fdConnection < 0) {
