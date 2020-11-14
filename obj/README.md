@@ -1,0 +1,1 @@
+Folder used to create '.o'-files with make
